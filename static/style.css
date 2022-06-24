@@ -1,0 +1,52 @@
+html, body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  background-color: #333;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  position: relative;
+  overflow: hidden;
+  width: 80vmin;
+  height: 80vmin;
+  background: white;
+}
+
+
+.square {
+  position: absolute;
+  width: 10vmin;
+  height: 10vmin;
+  background-size: cover;
+  image-rendering: pixelated;
+  background-color: transparent;
+  background-repeat: no-repeat;
+}
+
+.square--right {
+  transform: scaleX(-1);
+}
+
+.square--red {
+  background-image: url('/hero0.png');
+}
+
+.square--yellow {
+  background-image: url('/hero1.png');
+}
+
+.square--blue {
+  background-image: url('/hero2.png');
+}
+
+
+.square--green {
+  background-image: url('/hero3.png');
+}
